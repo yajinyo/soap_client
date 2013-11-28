@@ -4,7 +4,7 @@ class ClientsController < ApplicationController
     @driver = SOAP::WSDLDriverFactory.new(url).create_rpc_driver
     
     
-    ret = @driver.getVersion({:address=> {:zipcode=> "6900011"}  }).m_return
+    ret = @driver.get_address_list({:address=> {:zipcode=> "6900011"}  }).m_return
     
     
     render :text => ret.address_list[0].prefecture.name
