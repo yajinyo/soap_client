@@ -19,6 +19,20 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+
+group :development do
+  gem 'pry', '0.9.12.2'
+  gem 'pry-doc', '0.4.6'
+  gem 'pry-rails', '0.3.1'
+  gem 'pry-remote', '0.1.7'
+  gem 'pry-nav', '0.2.3'
+  gem 'pry-debugger'
+end
+
+
+
+
+
 gem 'soap4r-ruby1.9'
 gem 'jquery-rails'
 

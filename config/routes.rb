@@ -1,5 +1,13 @@
 SoapClient::Application.routes.draw do
-  get "clients/index"
+
+  resources :clients
+
+###  resources :addresses
+  resources :addresses do
+    collection do
+      post :search
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
